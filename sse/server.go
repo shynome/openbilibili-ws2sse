@@ -89,7 +89,10 @@ func (srv *Server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		case <-ticker.C:
 			try.To1(fmt.Fprintf(stream, ": hack for pass cdn \n"))
 			stream.Flush()
-		case danmu := <-ch:
+		case danmu, ok := <-ch:
+			if !ok {
+				return
+			}
 			switch danmu.Cmd {
 			case cmd.CmdDanmu,
 				cmd.CmdGift,
