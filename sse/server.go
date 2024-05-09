@@ -99,7 +99,8 @@ func (srv *Server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 				cmd.CmdGuard,
 				cmd.CmdSuperChat,
 				cmd.CmdDelSuperChat,
-				cmd.CmdLike:
+				cmd.CmdLike,
+				cmd.CmdEnd:
 				msg := Msg[cmd.Cmd[json.RawMessage]]{
 					Type: MsgDanmu,
 					Data: danmu,
