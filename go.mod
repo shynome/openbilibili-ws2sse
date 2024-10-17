@@ -5,7 +5,7 @@ go 1.22.0
 require (
 	github.com/go-deeper/chunks v1.0.0
 	github.com/shynome/err0 v0.1.0
-	github.com/shynome/openapi-bilibili v0.4.2
+	github.com/shynome/openapi-bilibili v0.5.2
 	github.com/spf13/cobra v1.8.0
 	golang.org/x/sync v0.7.0
 )

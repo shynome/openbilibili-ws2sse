@@ -56,6 +56,8 @@ github.com/shynome/openapi-bilibili v0.4.1 h1:8JFquGKPCwnQFG/AibJgo0XDi8MI+gTTu9
 github.com/shynome/openapi-bilibili v0.4.1/go.mod h1:pscXMK3Lc4XlRQSTq1aoMtjWxAAd9vs0cIyncAIwpy0=
 github.com/shynome/openapi-bilibili v0.4.2 h1:8aX4Zssz4AIpnbqYBBNCuODIa+KOjO1qCPxetqwxvpQ=
 github.com/shynome/openapi-bilibili v0.4.2/go.mod h1:pscXMK3Lc4XlRQSTq1aoMtjWxAAd9vs0cIyncAIwpy0=
+github.com/shynome/openapi-bilibili v0.5.2 h1:Nv1IOviN9B6X+orSyH68lJaGyAJf6+YplyUuvRBlfdQ=
+github.com/shynome/openapi-bilibili v0.5.2/go.mod h1:pscXMK3Lc4XlRQSTq1aoMtjWxAAd9vs0cIyncAIwpy0=
 github.com/spf13/cobra v1.8.0 h1:7aJaZx1B85qltLMc546zn58BxxfZdR/W22ej9CFoEf0=
 github.com/spf13/cobra v1.8.0/go.mod h1:WXLWApfZ71AjXPya3WOlMsY9yMs7YeiHhFVlvLyhcho=
 github.com/spf13/pflag v1.0.5 h1:iy+VFUOCP1a+8yFto/drg2CJ5u0yRoB7fZw3DKv/JXA=
