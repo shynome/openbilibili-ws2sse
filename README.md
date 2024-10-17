@@ -6,7 +6,7 @@
 
 ```sh
 # 安装
-go install github.com/shynome/openbilibili-ws2sse@v0.0.2
+go install github.com/shynome/openbilibili-ws2sse@latest
 # 启动
 # https://open-live.bilibili.com/open-manage 中个人资料tab获取参数值
 openbilibili-ws2sse --key {{access_key_id}} --secret {{access_key_secret}} --appid {{appid}}
