@@ -63,7 +63,7 @@ func (srv *Server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	srv.addGame(gid)
 	defer srv.removeGame(gid)
 
-	room := live.RoomWith(app.Info().WebsocketInfo)
+	room := live.RoomWith(app.Info().WebsocketInfo, gid)
 	ch := try.To1(room.Connect(ctx))
 
 	stream := StreamWriter{
@@ -100,7 +100,10 @@ func (srv *Server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 				cmd.CmdSuperChat,
 				cmd.CmdDelSuperChat,
 				cmd.CmdLike,
-				cmd.CmdEnd:
+				cmd.CmdEnd,
+				cmd.CmdEnter,
+				cmd.CmdLiveStart,
+				cmd.CmdLiveEnd:
 				msg := Msg[cmd.Cmd[json.RawMessage]]{
 					Type: MsgDanmu,
 					Data: danmu,
