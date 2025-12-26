@@ -96,7 +96,9 @@ func (srv *Server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 			switch danmu.Cmd {
 			case "heartbeat_reply": // 不输出心跳
 				// do nothing
-			case cmd.CmdDanmu,
+			case
+				"LIVE_OPEN_PLATFORM_DM_MIRROR", // 支持跨房弹幕
+				cmd.CmdDanmu,
 				cmd.CmdGift,
 				cmd.CmdGuard,
 				cmd.CmdSuperChat,
