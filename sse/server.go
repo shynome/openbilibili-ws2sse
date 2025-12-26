@@ -94,6 +94,8 @@ func (srv *Server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 				return
 			}
 			switch danmu.Cmd {
+			case "heartbeat_reply": // 不输出心跳
+				// do nothing
 			case cmd.CmdDanmu,
 				cmd.CmdGift,
 				cmd.CmdGuard,
