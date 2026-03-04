@@ -71,7 +71,7 @@ func (srv *Server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		Writer:  w,
 	}
 
-	w.Header().Set("Content-Type", "text/event-stream")
+	w.Header().Set("Content-Type", "text/event-stream; charset=utf-8")
 	w.WriteHeader(http.StatusOK)
 	init := Msg[string]{
 		Type: MsgInit,
